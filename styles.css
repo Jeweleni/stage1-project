@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&family=Open+Sans&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500;600&family=Raleway:wght@100;300;400&display=swap');
+
+body 
+{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: rgb(38, 54, 37);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    align-items: center;
+}
+
+img {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(360deg);
+    transition: all 400ms ease;
+    place-items: center;
+}
+
+main {
+    
+    margin: 20px auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 20px;
+
+}
+
+h2 {
+    color: rgb(38, 54, 37);
+    
+}
+
+
+@media screen {
+    
+}
