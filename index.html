@@ -8,18 +8,34 @@
 </head>
 <body>
     <header>
-        <h1>Real Time data by Jewel Eni</h1>
+        <h1>Profile by Jewel Eni</h1>
     </header>
     <main>
-            <h2>Jewel Eni</h2>
-            <div data-testid="personal-info">
+        <section>
+            <h3>Name</h3>
+            <div data-testid="slackUserName">
             </div>
-            <div>
-                <img src="/img.png" alt="image of Jewel">
+            <div data-testid="slackDisplayImage">
             </div>
-            <h2>Real-time Data</h2>
-            <div data-testid="real-time-data">
+        </section>
+        <section>
+            <h3>Date and Time Information</h3>
+            <div data-testid="currentDayOfTheWeek">
             </div>
+            <div data-testid="currentUTCTime">
+            </div>
+            <!-- <div data-testid="CurrentDateandTime">
+            </div> -->
+        </section>
+        <section>
+            <h3>Track</h3>
+            <div data-testid="myTrack">
+            </div>
+            <h3>GitHub Repository</h3>
+            <p class="github">Link to Project Repository</p>
+            <div class="github-link" data-testid="githubURL">
+            </div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

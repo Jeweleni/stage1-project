@@ -1,54 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&family=Open+Sans&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500;600&family=Raleway:wght@100;300;400&display=swap');
 
-body 
-{
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
+body {
+    font-family:'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    /* justify-content: center;
+    align-items: center; */
+
 }
 
 header {
-    background-color: rgb(38, 54, 37);
+    background-color: rgb(29, 53, 29);
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
 h1 {
-    align-items: center;
-}
-
-img {
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(360deg);
-    transition: all 400ms ease;
-    place-items: center;
+    margin: 0;
 }
 
 main {
-    
-    margin: 20px auto;
-    padding: 20px;
+    margin: 100px;
+    padding: 50px;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(137, 67, 67, 0.2);
+    justify-content: center;
+    /* text-align: center; */
+}
+
+/* section {
+    margin-bottom: 20px;
+    align-items: center;
+} */
+
+h3 {
+    color: rgb(45, 91, 47);
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    font-weight: bolder;
 }
 
-section {
-    margin-bottom: 20px;
-
+/* Rotate image 360 degrees */
+[data-testid="slackDisplayImage"] img {
+    animation: rotate 5s linear;
+    width: 30%;
+    border-radius: 3rem;
+    display: block;
+    margin: 0 auto;
 }
 
-h2 {
-    color: rgb(38, 54, 37);
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+[data-testid="slackDisplayImage"],
+[data-testid="currentDayOfTheWeek"],
+[data-testid="currentUTCTime"],
+[data-testid="myTrack"] {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: larger;
+    
+}
+[data-testid="githubURL"]{
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    background-color: rgb(29, 53, 29);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
     
 }
 
+.github-link {
+    margin-top: 20px;
+}
 
-@media screen {
-    
+.github-link a{
+    text-decoration: none;
+    color: #fff;
+}
+.github{
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: larger;
+}
+[data-testid="slackUserName"] {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: larger;
 }
